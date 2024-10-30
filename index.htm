@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+	<head> 
+		<title>Emulting Chrome's infobar with a jQuery plugin</title>
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/nbhdocmiheijfdgjlomjdhipdnahaofg">
+
+	</head>
+	<body>
+
+<script>
+
+var isthis_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+ if (isthis_chrome) {
+    document.write('<'+'a onclick="chrome.webstore.install()" href="https://chrome.google.com/webstore/detail/cranium-fitteds/nbhdocmiheijfdgjlomjdhipdnahaofg" target="_blank" ><img src="http://blog.craniumfitteds.com/wp-content/uploads/blog_chrome-560x150.png" alt="Cranium Fitteds Chrome App" title="Cranium Fitteds Chrome App" width="360" /></a>');
+}
+
+</script>
+	</body>
+</html>
